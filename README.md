@@ -1,12 +1,25 @@
-# Ava
+# Pitch.AI
 
-A landing page template.
+* [Dev environment set up](#dev-environment-set-up)
+* [Serving the site](#serving-the-site)
 
-* [Getting started](#getting-started)
+## Dev environment set up
+Note: this is how Anita had set up her dev env, for the team's reference. She's using a macbook.
 
-## Getting started
-* First, ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
-* Next, use your command line to enter your project directory.
-* This template comes with a ready-to-use package file called `package-sample.json`. You just need to rename it to `package.json`, then run `npm install` to install all of the dependencies into your project.
+* Open command line
+* Clone the repo: `git clone https://github.com/pitch-ai/pitch-ai.github.io.git`
+* Navigate to the newly cloned folder: `cd pitch.github.io`
+* Download [Visual Studio Code](https://code.visualstudio.com), if you don't already have it installed
+* Start up Visual Studio Code
+* Open the Command Palette, from the toolbar go to `Help` and search `Command Palette`, or if you're using a mac then press `Command + Shift + P`
+* Search for something like `code` and select the option that says `Shell Command: Install 'code' command in PATH`
+* Go back to command line, and type `code .`
+* A new VS Code window should have popped up with the repo folders! :) 
 
-You're ready to go! Run any task by typing `npm run task` (where "task" is the name of the task in the `"scripts"` object). The most useful task for rapid development is `watch`. It will start a new server, open up a browser and watch for any SCSS or JS changes in the `src` directory; once it compiles those changes, the browser will automatically inject the changed file(s)!
+## Serving the site
+* Ensure that node.js & npm are both installed. If not, choose your OS and installation method from [this page](https://nodejs.org/en/download/package-manager/) and follow the instructions.
+* Next, use your command line to enter your project directory
+* To serve the site locally, run `npm run serve` in command line
+
+View other options by typing `npm run`.
+
