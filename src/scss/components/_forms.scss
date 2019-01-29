@@ -1,3 +1,7 @@
+#honeypot {
+    display: none; /* makes the field not visible to humans */
+}
+
 .input,
 .textarea {
     background-color: color(bg, 1);
