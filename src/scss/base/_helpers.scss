@@ -28,6 +28,20 @@
     }
 }
 
+.shape-separator {
+  position: relative;
+  height: 24px;
+  // background: #333;
+}
+.shape-separator::after {
+  content: '';
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 357.75 238'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:%233f47f5;%7D%3C/style%3E%3C/defs%3E%3Ctitle%3EAsset 12%3C/title%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpath class='cls-1' d='M178.75,238c115,0,64-149,179-149V0H0V89c115,0,63.75,149,178.75,149'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
