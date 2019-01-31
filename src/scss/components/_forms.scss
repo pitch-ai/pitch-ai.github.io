@@ -83,6 +83,10 @@
     }
 }
 
+.form-thankyou {
+    display: none;
+}
+
 @include media( '>medium' ) {
 
     .field-grouped {
