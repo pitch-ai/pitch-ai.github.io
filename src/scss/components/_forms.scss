@@ -83,6 +83,40 @@
     }
 }
 
+.form-thanks {
+    @include font-size(9, mobile, true, false, true);
+    @if ( get-font-size(9, desktop) != get-font-size(9, mobile) ) {
+        @include media( '>medium' ) {
+            @include font-size(9, desktop, true, false, true);
+        }
+    }
+    @include font-weight(bold);
+    display: none;
+    background: none;
+    box-shadow: none;
+    color: #3c50ec;
+    width: 196px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    background-color: color(bg, 1);
+    color: color(primary, 1) !important;
+    border: none;
+    border-radius: 2px;
+    justify-content: center;
+    padding: 16px 32px;
+	height: 48px;
+    text-align: center;
+    white-space: nowrap;
+    &:active {
+        outline: 0;
+    }
+
+    &::before {
+        border-radius: 2px;
+    }
+}
+
 @include media( '>medium' ) {
 
     .field-grouped {

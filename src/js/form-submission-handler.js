@@ -86,14 +86,11 @@
       xhr.onreadystatechange = function() {
           console.log(xhr.status, xhr.statusText);
           console.log(xhr.responseText);
-          var formElements = form.querySelector(".form-elements")
-          if (formElements) {
-            formElements.style.display = "none"; // hide form
-          }
           var submitButton = form.querySelector(".gform .button");
-          if (submitButton) {
-            submitButton.style.background = "#c9c9c9";
-            submitButton.innerHTML = "           Thanks!          "
+          var thanks = form.querySelector(".gform .form-thanks");
+          if (submitButton && thanks) {
+            thanks.style.display = "block";
+            submitButton.style.display = "none";
           }
           return;
       };
