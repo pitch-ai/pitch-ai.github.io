@@ -90,9 +90,10 @@
           if (formElements) {
             formElements.style.display = "none"; // hide form
           }
-          var thankYouMessage = form.querySelector(".thankyou_message");
-          if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
+          var submitButton = form.querySelector(".gform .button");
+          if (submitButton) {
+            submitButton.style.background = "#c9c9c9";
+            submitButton.innerHTML = "           Thanks!          "
           }
           return;
       };
